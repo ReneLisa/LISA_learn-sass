@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  background:
+  radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .content {
+    width: 50vw;
+    padding: $gutter*3;
+    margin: 0 $gutter;
+    color: black;
+    background-color: $color-main;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px;
+    h1 {
+      font-family: 'Permanent Marker', cursive;
+      margin-bottom: 2vh;}
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;}
+    }
+}
+
+
+/* ----------------------------CSS
+.content span:first-child {
+  color: blue;
+}
+.content span:nth-child(2) {
+  color: red;
+}*/
+
+/* ---------------------------SASS
+.content {
+  span:first-child {
+    color: blue;
+  }
+  span:nth-child(2) {
+    color: red;
+  }
+}
+
+.content {
+  p {
+    font-size: 2em;
+    span {
+      &:first-child {
+      color: blue;
+      }
+      &:nth-child(2) {
+      color: red;
+      }
+    }
+  }
+}
+*/
